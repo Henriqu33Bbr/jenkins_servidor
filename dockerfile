@@ -7,7 +7,7 @@ RUN mvn clean package -DskipTests
 # Package Stage
 
 FROM openjdk:17-jdk-slim
-COPY --from=Build /target/mudi-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=Build /target/JBS-POC-master-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
